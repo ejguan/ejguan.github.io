@@ -3,7 +3,7 @@
 .. currentmodule:: torchdata.datapipes.iter
 
 
-Extractor
-=========
+Slicer
+======
 
-.. autoclass:: Extractor
+.. autoclass:: Slicer

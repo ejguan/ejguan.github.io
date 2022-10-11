@@ -3,7 +3,7 @@
 .. currentmodule:: torchdata.datapipes.iter
 
 
-TarArchiveReader
-================
+MapToIterConverter
+==================
 
-.. autoclass:: TarArchiveReader
+.. autoclass:: MapToIterConverter

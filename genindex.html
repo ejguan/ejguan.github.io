@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; TorchData 0.0 documentation</title>
+  <title>Index &mdash; TorchData main documentation</title>
   
 
   
@@ -29,9 +29,19 @@
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
   <!-- Google Analytics -->
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117752657-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117752657-2');
+    </script>
   
   <!-- End Google Analytics -->
   
@@ -88,7 +98,7 @@
             <a href="https://pytorch.org/tutorials">Tutorials</a>
           </li>
 
-          <li>
+          <li class="active docs-active">
             <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
               <a class="resource-option with-down-orange-arrow">
                 Docs
@@ -110,12 +120,20 @@
                   <span class="dropdown-title">torchvision</span>
                   <p></p>
                 </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/elastic/">
-                  <span class="dropdown-title">TorchElastic</span>
+                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/torchrec">
+                  <span class="dropdown-title">TorchRec</span>
+                  <p></p>
+                </a>
+                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/data">
+                  <span class="dropdown-title">TorchData</span>
                   <p></p>
                 </a>
                 <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/serve/">
                   <span class="dropdown-title">TorchServe</span>
+                  <p></p>
+                </a>
+                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/torchx/">
+                  <span class="dropdown-title">TorchX</span>
                   <p></p>
                 </a>
                 <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/xla">
@@ -182,13 +200,10 @@
         <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           <div class="pytorch-left-menu-search">
             
-
-            
-              
-              
-            
-
-            
+    <div class="version">
+      <a href='https://pytorch.org/data/versions.html'>main (0.5.0a0+0fed8da ) &#x25BC</a>
+    </div>
+    
 
 
   
@@ -202,7 +217,6 @@
   </form>
 </div>
 
-            
           </div>
 
           
@@ -216,11 +230,12 @@
 <li class="toctree-l1"><a class="reference internal" href="torchdata.datapipes.iter.html">Iterable-style DataPipes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="torchdata.datapipes.map.html">Map-style DataPipes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="torchdata.datapipes.utils.html">Utility Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataloader2.html">New DataLoader</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorial and Examples:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PyTorch Libraries</span></p>
 <ul>
@@ -305,7 +320,9 @@
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
- <a href="#B"><strong>B</strong></a>
+ <a href="#_"><strong>_</strong></a>
+ | <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
  | <a href="#C"><strong>C</strong></a>
  | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
@@ -322,10 +339,37 @@
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  | <a href="#X"><strong>X</strong></a>
  | <a href="#Z"><strong>Z</strong></a>
  
 </div>
+<h2 id="_">_</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="dataloader2.html#torchdata.dataloader2.adapter.Adapter.__call__">__call__() (torchdata.dataloader2.adapter.Adapter method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="dataloader2.html#torchdata.dataloader2.DataLoader2.__iter__">__iter__() (torchdata.dataloader2.DataLoader2 method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="dataloader2.html#torchdata.dataloader2.adapter.Adapter">Adapter (class in torchdata.dataloader2.adapter)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.AISFileLister.html#torchdata.datapipes.iter.AISFileLister">AISFileLister (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.AISFileLoader.html#torchdata.datapipes.iter.AISFileLoader">AISFileLoader (class in torchdata.datapipes.iter)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -337,7 +381,11 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.BatchMapper.html#torchdata.datapipes.iter.BatchMapper">BatchMapper (class in torchdata.datapipes.iter)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.BucketBatcher.html#torchdata.datapipes.iter.BucketBatcher">BucketBatcher (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.Bz2FileLoader.html#torchdata.datapipes.iter.Bz2FileLoader">Bz2FileLoader (class in torchdata.datapipes.iter)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -345,16 +393,22 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.dataloader2.adapter.CacheTimeout.html#torchdata.dataloader2.adapter.CacheTimeout">CacheTimeout (class in torchdata.dataloader2.adapter)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.CheckpointableReadingServiceInterface.checkpoint">checkpoint() (torchdata.dataloader2.CheckpointableReadingServiceInterface method)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.CheckpointableReadingServiceInterface">CheckpointableReadingServiceInterface (class in torchdata.dataloader2)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.Collator.html#torchdata.datapipes.iter.Collator">Collator (class in torchdata.datapipes.iter)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.Concater.html#torchdata.datapipes.iter.Concater">Concater (class in torchdata.datapipes.iter)</a>
 
       <ul>
         <li><a href="generated/torchdata.datapipes.map.Concater.html#torchdata.datapipes.map.Concater">(class in torchdata.datapipes.map)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.CSVDictParser.html#torchdata.datapipes.iter.CSVDictParser">CSVDictParser (class in torchdata.datapipes.iter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.CSVParser.html#torchdata.datapipes.iter.CSVParser">CSVParser (class in torchdata.datapipes.iter)</a>
@@ -369,9 +423,17 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.DataFrameMaker.html#torchdata.datapipes.iter.DataFrameMaker">DataFrameMaker (class in torchdata.datapipes.iter)</a>
 </li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.DataLoader2">DataLoader2 (class in torchdata.dataloader2)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.Decompressor.html#torchdata.datapipes.iter.Decompressor">Decompressor (class in torchdata.datapipes.iter)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.Demultiplexer.html#torchdata.datapipes.iter.Demultiplexer">Demultiplexer (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.dataloader2.DistributedReadingService.html#torchdata.dataloader2.DistributedReadingService">DistributedReadingService (class in torchdata.dataloader2)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.Dropper.html#torchdata.datapipes.iter.Dropper">Dropper (class in torchdata.datapipes.iter)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -381,18 +443,9 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.EndOnDiskCacheHolder.html#torchdata.datapipes.iter.EndOnDiskCacheHolder">EndOnDiskCacheHolder (class in torchdata.datapipes.iter)</a>
 </li>
-      <li><a href="generated/torchdata.datapipes.iter.Enumerator.html#torchdata.datapipes.iter.Enumerator">Enumerator (class in torchdata.datapipes.iter)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    examples
-
-      <ul>
-        <li><a href="examples.html#module-examples">module</a>
-</li>
-      </ul></li>
-      <li><a href="generated/torchdata.datapipes.iter.Extractor.html#torchdata.datapipes.iter.Extractor">Extractor (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.datapipes.iter.Enumerator.html#torchdata.datapipes.iter.Enumerator">Enumerator (class in torchdata.datapipes.iter)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -406,11 +459,29 @@
 </li>
       <li><a href="generated/torchdata.datapipes.iter.Filter.html#torchdata.datapipes.iter.Filter">Filter (class in torchdata.datapipes.iter)</a>
 </li>
-      <li><a href="generated/torchdata.datapipes.iter.FlatMapper.html#torchdata.datapipes.iter.FlatMapper">FlatMapper (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.dataloader2.DistributedReadingService.html#torchdata.dataloader2.DistributedReadingService.finalize">finalize() (torchdata.dataloader2.DistributedReadingService method)</a>
+
+      <ul>
+        <li><a href="generated/torchdata.dataloader2.MultiProcessingReadingService.html#torchdata.dataloader2.MultiProcessingReadingService.finalize">(torchdata.dataloader2.MultiProcessingReadingService method)</a>
+</li>
+        <li><a href="generated/torchdata.dataloader2.PrototypeMultiProcessingReadingService.html#torchdata.dataloader2.PrototypeMultiProcessingReadingService.finalize">(torchdata.dataloader2.PrototypeMultiProcessingReadingService method)</a>
+</li>
+        <li><a href="dataloader2.html#torchdata.dataloader2.ReadingServiceInterface.finalize">(torchdata.dataloader2.ReadingServiceInterface method)</a>
+</li>
+      </ul></li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.ReadingServiceInterface.finalize_iteration">finalize_iteration() (torchdata.dataloader2.ReadingServiceInterface method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.dataloader2.graph.find_dps.html#torchdata.dataloader2.graph.find_dps">find_dps() (in module torchdata.dataloader2.graph)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.FlatMapper.html#torchdata.datapipes.iter.FlatMapper">FlatMapper (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.Flattener.html#torchdata.datapipes.iter.Flattener">Flattener (class in torchdata.datapipes.iter)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.Forker.html#torchdata.datapipes.iter.Forker">Forker (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.DataLoader2.from_state">from_state() (torchdata.dataloader2.DataLoader2 class method)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.FSSpecFileLister.html#torchdata.datapipes.iter.FSSpecFileLister">FSSpecFileLister (class in torchdata.datapipes.iter)</a>
 </li>
@@ -450,23 +521,49 @@
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.InBatchShuffler.html#torchdata.datapipes.iter.InBatchShuffler">InBatchShuffler (class in torchdata.datapipes.iter)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.IndexAdder.html#torchdata.datapipes.iter.IndexAdder">IndexAdder (class in torchdata.datapipes.iter)</a>
 </li>
-      <li><a href="generated/torchdata.datapipes.iter.InMemoryCacheHolder.html#torchdata.datapipes.iter.InMemoryCacheHolder">InMemoryCacheHolder (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.dataloader2.DistributedReadingService.html#torchdata.dataloader2.DistributedReadingService.initialize">initialize() (torchdata.dataloader2.DistributedReadingService method)</a>
+
+      <ul>
+        <li><a href="generated/torchdata.dataloader2.MultiProcessingReadingService.html#torchdata.dataloader2.MultiProcessingReadingService.initialize">(torchdata.dataloader2.MultiProcessingReadingService method)</a>
 </li>
+        <li><a href="generated/torchdata.dataloader2.PrototypeMultiProcessingReadingService.html#torchdata.dataloader2.PrototypeMultiProcessingReadingService.initialize">(torchdata.dataloader2.PrototypeMultiProcessingReadingService method)</a>
+</li>
+        <li><a href="dataloader2.html#torchdata.dataloader2.ReadingServiceInterface.initialize">(torchdata.dataloader2.ReadingServiceInterface method)</a>
+</li>
+      </ul></li>
+      <li><a href="generated/torchdata.dataloader2.DistributedReadingService.html#torchdata.dataloader2.DistributedReadingService.initialize_iteration">initialize_iteration() (torchdata.dataloader2.DistributedReadingService method)</a>
+
+      <ul>
+        <li><a href="generated/torchdata.dataloader2.PrototypeMultiProcessingReadingService.html#torchdata.dataloader2.PrototypeMultiProcessingReadingService.initialize_iteration">(torchdata.dataloader2.PrototypeMultiProcessingReadingService method)</a>
+</li>
+        <li><a href="dataloader2.html#torchdata.dataloader2.ReadingServiceInterface.initialize_iteration">(torchdata.dataloader2.ReadingServiceInterface method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.InMemoryCacheHolder.html#torchdata.datapipes.iter.InMemoryCacheHolder">InMemoryCacheHolder (class in torchdata.datapipes.iter)</a>
+
+      <ul>
+        <li><a href="generated/torchdata.datapipes.map.InMemoryCacheHolder.html#torchdata.datapipes.map.InMemoryCacheHolder">(class in torchdata.datapipes.map)</a>
+</li>
+      </ul></li>
       <li><a href="generated/torchdata.datapipes.iter.IoPathFileLister.html#torchdata.datapipes.iter.IoPathFileLister">IoPathFileLister (class in torchdata.datapipes.iter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.IoPathFileOpener.html#torchdata.datapipes.iter.IoPathFileOpener">IoPathFileOpener (class in torchdata.datapipes.iter)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.IoPathSaver.html#torchdata.datapipes.iter.IoPathSaver">IoPathSaver (class in torchdata.datapipes.iter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.IterableWrapper.html#torchdata.datapipes.iter.IterableWrapper">IterableWrapper (class in torchdata.datapipes.iter)</a>
 </li>
-      <li><a href="generated/torchdata.datapipes.iter.IterDataPipe.html#torchdata.datapipes.iter.IterDataPipe">IterDataPipe (class in torchdata.datapipes.iter)</a>, <a href="torchdata.datapipes.iter.html#torchdata.datapipes.iter.IterDataPipe">[1]</a>
+      <li><a href="torchdata.datapipes.iter.html#torchdata.datapipes.iter.IterDataPipe">IterDataPipe (class in torchdata.datapipes.iter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.IterKeyZipper.html#torchdata.datapipes.iter.IterKeyZipper">IterKeyZipper (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.map.IterToMapConverter.html#torchdata.datapipes.map.IterToMapConverter">IterToMapConverter (class in torchdata.datapipes.map)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -482,7 +579,13 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.LengthSetter.html#torchdata.datapipes.iter.LengthSetter">LengthSetter (class in torchdata.datapipes.iter)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.LineReader.html#torchdata.datapipes.iter.LineReader">LineReader (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.DataLoader2.load_state_dict">load_state_dict() (torchdata.dataloader2.DataLoader2 method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -500,16 +603,26 @@
         <li><a href="generated/torchdata.datapipes.map.Mapper.html#torchdata.datapipes.map.Mapper">(class in torchdata.datapipes.map)</a>
 </li>
       </ul></li>
+      <li><a href="generated/torchdata.datapipes.iter.MapToIterConverter.html#torchdata.datapipes.iter.MapToIterConverter">MapToIterConverter (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.MaxTokenBucketizer.html#torchdata.datapipes.iter.MaxTokenBucketizer">MaxTokenBucketizer (class in torchdata.datapipes.iter)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     module
 
       <ul>
-        <li><a href="examples.html#module-examples">examples</a>
+        <li><a href="dataloader2.html#module-torchdata.dataloader2">torchdata.dataloader2</a>
+</li>
+        <li><a href="dataloader2.html#module-torchdata.dataloader2.adapter">torchdata.dataloader2.adapter</a>
 </li>
       </ul></li>
       <li><a href="generated/torchdata.datapipes.iter.Multiplexer.html#torchdata.datapipes.iter.Multiplexer">Multiplexer (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.MultiplexerLongest.html#torchdata.datapipes.iter.MultiplexerLongest">MultiplexerLongest (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.dataloader2.MultiProcessingReadingService.html#torchdata.dataloader2.MultiProcessingReadingService">MultiProcessingReadingService (class in torchdata.dataloader2)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -535,16 +648,30 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.ParquetDataFrameLoader.html#torchdata.datapipes.iter.ParquetDataFrameLoader">ParquetDataFrameLoader (class in torchdata.datapipes.iter)</a>
 </li>
+      <li><a href="generated/torchdata.dataloader2.PrototypeMultiProcessingReadingService.html#torchdata.dataloader2.PrototypeMultiProcessingReadingService">PrototypeMultiProcessingReadingService (class in torchdata.dataloader2)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.RandomSplitter.html#torchdata.datapipes.iter.RandomSplitter">RandomSplitter (class in torchdata.datapipes.iter)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.RarArchiveLoader.html#torchdata.datapipes.iter.RarArchiveLoader">RarArchiveLoader (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.ReadingServiceInterface">ReadingServiceInterface (class in torchdata.dataloader2)</a>
+</li>
+      <li><a href="generated/torchdata.dataloader2.graph.remove_dp.html#torchdata.dataloader2.graph.remove_dp">remove_dp() (in module torchdata.dataloader2.graph)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.Repeater.html#torchdata.datapipes.iter.Repeater">Repeater (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.dataloader2.graph.replace_dp.html#torchdata.dataloader2.graph.replace_dp">replace_dp() (in module torchdata.dataloader2.graph)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.CheckpointableReadingServiceInterface.restore">restore() (torchdata.dataloader2.CheckpointableReadingServiceInterface method)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.RoutedDecoder.html#torchdata.datapipes.iter.RoutedDecoder">RoutedDecoder (class in torchdata.datapipes.iter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.Rows2Columnar.html#torchdata.datapipes.iter.Rows2Columnar">Rows2Columnar (class in torchdata.datapipes.iter)</a>
@@ -555,6 +682,10 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.S3FileLister.html#torchdata.datapipes.iter.S3FileLister">S3FileLister (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.S3FileLoader.html#torchdata.datapipes.iter.S3FileLoader">S3FileLoader (class in torchdata.datapipes.iter)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.SampleMultiplexer.html#torchdata.datapipes.iter.SampleMultiplexer">SampleMultiplexer (class in torchdata.datapipes.iter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.Sampler.html#torchdata.datapipes.iter.Sampler">Sampler (class in torchdata.datapipes.iter)</a>
@@ -563,9 +694,11 @@
 </li>
       <li><a href="generated/torchdata.datapipes.map.SequenceWrapper.html#torchdata.datapipes.map.SequenceWrapper">SequenceWrapper (class in torchdata.datapipes.map)</a>
 </li>
+      <li><a href="generated/torchdata.datapipes.iter.ShardingFilter.html#torchdata.datapipes.iter.ShardingFilter">ShardingFilter (class in torchdata.datapipes.iter)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="generated/torchdata.datapipes.iter.ShardingFilter.html#torchdata.datapipes.iter.ShardingFilter">ShardingFilter (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.dataloader2.adapter.Shuffle.html#torchdata.dataloader2.adapter.Shuffle">Shuffle (class in torchdata.dataloader2.adapter)</a>
 </li>
       <li><a href="generated/torchdata.datapipes.iter.Shuffler.html#torchdata.datapipes.iter.Shuffler">Shuffler (class in torchdata.datapipes.iter)</a>
 
@@ -573,7 +706,15 @@
         <li><a href="generated/torchdata.datapipes.map.Shuffler.html#torchdata.datapipes.map.Shuffler">(class in torchdata.datapipes.map)</a>
 </li>
       </ul></li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.DataLoader2.shutdown">shutdown() (torchdata.dataloader2.DataLoader2 method)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.iter.Slicer.html#torchdata.datapipes.iter.Slicer">Slicer (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="dataloader2.html#torchdata.dataloader2.DataLoader2.state_dict">state_dict() (torchdata.dataloader2.DataLoader2 method)</a>
+</li>
       <li><a href="generated/torchdata.datapipes.iter.StreamReader.html#torchdata.datapipes.iter.StreamReader">StreamReader (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.utils.StreamWrapper.html#torchdata.datapipes.utils.StreamWrapper">StreamWrapper (class in torchdata.datapipes.utils)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -581,7 +722,27 @@
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="generated/torchdata.datapipes.iter.TarArchiveReader.html#torchdata.datapipes.iter.TarArchiveReader">TarArchiveReader (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.datapipes.iter.TarArchiveLoader.html#torchdata.datapipes.iter.TarArchiveLoader">TarArchiveLoader (class in torchdata.datapipes.iter)</a>
+</li>
+      <li><a href="generated/torchdata.datapipes.utils.to_graph.html#torchdata.datapipes.utils.to_graph">to_graph() (in module torchdata.datapipes.utils)</a>
+</li>
+      <li>
+    torchdata.dataloader2
+
+      <ul>
+        <li><a href="dataloader2.html#module-torchdata.dataloader2">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    torchdata.dataloader2.adapter
+
+      <ul>
+        <li><a href="dataloader2.html#module-torchdata.dataloader2.adapter">module</a>
+</li>
+      </ul></li>
+      <li><a href="generated/torchdata.dataloader2.graph.traverse_dps.html#torchdata.dataloader2.graph.traverse_dps">traverse_dps() (in module torchdata.dataloader2.graph)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -592,12 +753,28 @@
       <li><a href="generated/torchdata.datapipes.iter.UnBatcher.html#torchdata.datapipes.iter.UnBatcher">UnBatcher (class in torchdata.datapipes.iter)</a>
 </li>
   </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.UnZipper.html#torchdata.datapipes.iter.UnZipper">UnZipper (class in torchdata.datapipes.iter)</a>
+
+      <ul>
+        <li><a href="generated/torchdata.datapipes.map.UnZipper.html#torchdata.datapipes.map.UnZipper">(class in torchdata.datapipes.map)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.WebDataset.html#torchdata.datapipes.iter.WebDataset">WebDataset (class in torchdata.datapipes.iter)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="X">X</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="generated/torchdata.datapipes.iter.XzFileReader.html#torchdata.datapipes.iter.XzFileReader">XzFileReader (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.datapipes.iter.XzFileLoader.html#torchdata.datapipes.iter.XzFileLoader">XzFileLoader (class in torchdata.datapipes.iter)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -605,16 +782,18 @@
 <h2 id="Z">Z</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="generated/torchdata.datapipes.iter.ZipArchiveReader.html#torchdata.datapipes.iter.ZipArchiveReader">ZipArchiveReader (class in torchdata.datapipes.iter)</a>
+      <li><a href="generated/torchdata.datapipes.iter.ZipArchiveLoader.html#torchdata.datapipes.iter.ZipArchiveLoader">ZipArchiveLoader (class in torchdata.datapipes.iter)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="generated/torchdata.datapipes.iter.Zipper.html#torchdata.datapipes.iter.Zipper">Zipper (class in torchdata.datapipes.iter)</a>
 
       <ul>
         <li><a href="generated/torchdata.datapipes.map.Zipper.html#torchdata.datapipes.map.Zipper">(class in torchdata.datapipes.map)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="generated/torchdata.datapipes.iter.ZipperLongest.html#torchdata.datapipes.iter.ZipperLongest">ZipperLongest (class in torchdata.datapipes.iter)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -634,7 +813,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Meta.
+        &copy; Copyright 2021 - Present, Torch Contributors.
 
     </p>
   </div>
@@ -669,6 +848,7 @@
          <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
          <script src="_static/jquery.js"></script>
          <script src="_static/underscore.js"></script>
+         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="_static/doctools.js"></script>
      
 
@@ -740,50 +920,43 @@
           </ul>
         </div>
 
-        <div class="footer-links-col follow-us-col">
+        <div class="footer-links-col">
           <ul>
-            <li class="list-title">Stay Connected</li>
-            <li>
-              <div id="mc_embed_signup">
-                <form
-                  action="https://twitter.us14.list-manage.com/subscribe/post?u=75419c71fe0a935e53dfa4a3f&id=91d0dccd39"
-                  method="post"
-                  id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form"
-                  class="email-subscribe-form validate"
-                  target="_blank"
-                  novalidate>
-                  <div id="mc_embed_signup_scroll" class="email-subscribe-form-fields-wrapper">
-                    <div class="mc-field-group">
-                      <label for="mce-EMAIL" style="display:none;">Email Address</label>
-                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-                    </div>
-
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_75419c71fe0a935e53dfa4a3f_91d0dccd39" tabindex="-1" value=""></div>
-
-                    <div class="clear">
-                      <input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button email-subscribe-button">
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-            </li>
-          </ul>
-
-          <div class="footer-social-icons">
-            <a href="https://www.facebook.com/pytorch" target="_blank" class="facebook"></a>
-            <a href="https://twitter.com/pytorch" target="_blank" class="twitter"></a>
-            <a href="https://www.youtube.com/pytorch" target="_blank" class="youtube"></a>
+            <li class="list-title">Stay up to date</li>
+            <li><a href="https://www.facebook.com/pytorch" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/pytorch" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/pytorch" target="_blank">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/company/pytorch" target="_blank">LinkedIn</a></li>
+          </ul>  
           </div>
+
+        <div class="footer-links-col">
+          <ul>
+            <li class="list-title">PyTorch Podcasts</li>
+            <li><a href="https://open.spotify.com/show/6UzHKeiy368jKfQMKKvJY5" target="_blank">Spotify</a></li>
+            <li><a href="https://podcasts.apple.com/us/podcast/pytorch-developer-podcast/id1566080008" target="_blank">Apple</a></li>
+            <li><a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9PQjVGa0lsOA%3D%3D" target="_blank">Google</a></li>
+            <li><a href="https://music.amazon.com/podcasts/7a4e6f0e-26c2-49e9-a478-41bd244197d0/PyTorch-Developer-Podcast?" target="_blank">Amazon</a></li>
+          </ul>
+         </div>
         </div>
+        
+        <div class="privacy-policy">
+          <ul>
+            <li class="privacy-policy-links"><a href="https://www.linuxfoundation.org/terms/" target="_blank">Terms</a></li>
+            <li class="privacy-policy-links">|</li>
+            <li class="privacy-policy-links"><a href="https://www.linuxfoundation.org/privacy-policy/" target="_blank">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+        <p>© Copyright The Linux Foundation. The PyTorch Foundation is a project of The Linux Foundation.
+          For web site terms of use, trademark policy and other policies applicable to The PyTorch Foundation please see
+          <a href="www.linuxfoundation.org/policies/">www.linuxfoundation.org/policies/</a>. The PyTorch Foundation supports the PyTorch open source
+          project, which has been established as PyTorch Project a Series of LF Projects, LLC. For policies applicable to the PyTorch Project a Series of LF Projects, LLC,
+          please see <a href="www.lfprojects.org/policies/">www.lfprojects.org/policies/</a>.</p>
       </div>
-    </div>
+     </div>
+
   </footer>
 
   <div class="cookie-banner-wrapper">
@@ -834,7 +1007,7 @@
             <a href="https://pytorch.org/tutorials">Tutorials</a>
           </li>
 
-          <li class="resources-mobile-menu-title">
+          <li class="resources-mobile-menu-title" class="active">
             Docs
           </li>
 
@@ -856,11 +1029,11 @@
             </li>
 
             <li>
-              <a href="https://pytorch.org/elastic/">TorchElastic</a>
+              <a href="https://pytorch.org/serve/">TorchServe</a>
             </li>
 
             <li>
-              <a href="https://pytorch.org/serve/">TorchServe</a>
+              <a href="https://pytorch.org/torchx/">TorchX</a>
             </li>
 
             <li>

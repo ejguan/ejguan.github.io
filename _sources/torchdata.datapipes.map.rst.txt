@@ -3,39 +3,43 @@ Map-style DataPipes
 
 .. currentmodule:: torchdata.datapipes.map
 
-A map-style dataset is one that implements the ``__getitem__()`` and ``__len__()`` protocols, and represents a map
-from (possibly non-integral) indices/keys to data samples.
+A Map-style DataPipe is one that implements the ``__getitem__()`` and ``__len__()`` protocols, and represents a map
+from (possibly non-integral) indices/keys to data samples. This is a close equivalent of ``Dataset`` from the PyTorch
+core library.
+
+For example, when accessed with ``mapdatapipe[idx]``, could read the ``idx``-th image and its
+corresponding label from a folder on the disk.
 
 .. autoclass:: MapDataPipe
 
-For example, such a dataset, when accessed with ``mapdatapipe[idx]``, could read the ``idx``-th image and its
-corresponding label from a folder on the disk.
 
-These DataPipes can be invoked in two ways, using the class constructor or applying their functional form onto
-an existing `MapDataPipe` (available to most but not all DataPipes).
+By design, there are fewer ``MapDataPipe`` than ``IterDataPipe`` to avoid duplicate implementations of the same
+functionalities as ``MapDataPipe``. We encourage users to use the built-in ``IterDataPipe`` for various functionalities,
+and convert it to ``MapDataPipe`` as needed using :class:`.IterToMapConverter` or ``.to_map_datapipe()``.
+If you have any question about usage or best practices while using ``MapDataPipe``, feel free to ask on the PyTorch
+forum under the `'data' category <https://discuss.pytorch.org/c/data/37>`_.
 
-.. code:: python
+We are open to add additional ``MapDataPipe`` where the operations can be lazily executed and ``__len__`` can be
+known in advance. Feel free to make suggestions with description of your use case in
+`this Github issue <https://github.com/pytorch/pytorch/issues/57031>`_. Feedback about our design choice is also
+welcomed in that Github issue.
 
-    from torchdata.datapipes.map import SequenceWrapper, Mapper
+Here is the list of available Map-style DataPipes:
 
-    dp = SequenceWrapper(range(10))
-    map_dp_1 = dp.map(lambda x: x + 1)
-    list(map_dp_1)  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    map_dp_2 = Mapper(dp, lambda x: x + 1)
-    list(map_dp_2)  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-
-DataPipes
+MapDataPipes
 -------------------------
 
 .. autosummary::
     :nosignatures:
     :toctree: generated/
-    :template: datapipe.rst
+    :template: class_template.rst
 
     Batcher
     Concater
+    InMemoryCacheHolder
+    IterToMapConverter
     Mapper
     SequenceWrapper
     Shuffler
+    UnZipper
     Zipper

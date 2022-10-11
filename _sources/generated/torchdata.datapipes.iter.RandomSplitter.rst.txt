@@ -3,7 +3,7 @@
 .. currentmodule:: torchdata.datapipes.iter
 
 
-XzFileReader
-============
+RandomSplitter
+==============
 
-.. autoclass:: XzFileReader
+.. autoclass:: RandomSplitter
