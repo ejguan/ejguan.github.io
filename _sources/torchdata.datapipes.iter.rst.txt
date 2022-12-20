@@ -100,6 +100,7 @@ These tend to involve multiple DataPipes, combining them or splitting one to man
     MapKeyZipper
     Multiplexer
     MultiplexerLongest
+    RoundRobinDemultiplexer
     SampleMultiplexer
     UnZipper
     Zipper
@@ -181,6 +182,7 @@ A miscellaneous set of DataPipes with different functionalities.
     LengthSetter
     MapToIterConverter
     OnDiskCacheHolder
+    Prefetcher
     RandomSplitter
     ShardingFilter
 
