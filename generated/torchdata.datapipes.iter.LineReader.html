@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>LineReader &mdash; TorchData main documentation</title>
@@ -341,7 +342,7 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="linereader">
+  <section id="linereader">
 <h1>LineReader<a class="headerlink" href="#linereader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.datapipes.iter.LineReader">
@@ -349,7 +350,7 @@
 <dd><p>Accepts a DataPipe consisting of tuples of file name and string data stream, and for each line in the
 stream, yields a tuple of file name and the line (functional name: <code class="docutils literal notranslate"><span class="pre">readlines</span></code>).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>source_datapipe</strong> – a DataPipe with tuples of file name and string data stream</p></li>
 <li><p><strong>skip_lines</strong> – number of lines to skip at the beginning of each file</p></li>
@@ -375,7 +376,7 @@ than just the contents</p></li>
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -420,7 +421,10 @@ than just the contents</p></li>
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">LineReader</a></li>
+<li><a class="reference internal" href="#">LineReader</a><ul>
+<li><a class="reference internal" href="#torchdata.datapipes.iter.LineReader"><code class="docutils literal notranslate"><span class="pre">LineReader</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -437,10 +441,8 @@ than just the contents</p></li>
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

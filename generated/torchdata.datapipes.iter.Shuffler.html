@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Shuffler &mdash; TorchData main documentation</title>
@@ -341,7 +342,7 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="shuffler">
+  <section id="shuffler">
 <h1>Shuffler<a class="headerlink" href="#shuffler" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.datapipes.iter.Shuffler">
@@ -359,7 +360,7 @@ the <code class="xref py py-class docutils literal notranslate"><span class="pre
 mode (<code class="xref py py-attr docutils literal notranslate"><span class="pre">num_worker</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>), <cite>worker_init_fn</cite> is used to set up a random seed
 for each worker process.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>datapipe</strong> – The IterDataPipe being shuffled</p></li>
 <li><p><strong>buffer_size</strong> – The buffer size for shuffling (default to <code class="docutils literal notranslate"><span class="pre">10000</span></code>)</p></li>
@@ -379,7 +380,7 @@ applying the shuffle</p></li>
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -424,7 +425,10 @@ applying the shuffle</p></li>
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Shuffler</a></li>
+<li><a class="reference internal" href="#">Shuffler</a><ul>
+<li><a class="reference internal" href="#torchdata.datapipes.iter.Shuffler"><code class="docutils literal notranslate"><span class="pre">Shuffler</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -441,10 +445,8 @@ applying the shuffle</p></li>
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

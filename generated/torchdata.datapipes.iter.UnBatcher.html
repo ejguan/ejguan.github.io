@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>UnBatcher &mdash; TorchData main documentation</title>
@@ -341,7 +342,7 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="unbatcher">
+  <section id="unbatcher">
 <h1>UnBatcher<a class="headerlink" href="#unbatcher" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.datapipes.iter.UnBatcher">
@@ -349,7 +350,7 @@
 <dd><p>Undoes batching of data (functional name: <code class="docutils literal notranslate"><span class="pre">unbatch</span></code>). In other words, it flattens the data up to the specified level
 within a batched DataPipe.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>datapipe</strong> – Iterable DataPipe being un-batched</p></li>
 <li><p><strong>unbatch_level</strong> – Defaults to <code class="docutils literal notranslate"><span class="pre">1</span></code> (only flattening the top level). If set to <code class="docutils literal notranslate"><span class="pre">2</span></code>,
@@ -371,7 +372,7 @@ it will flatten the top two levels, and <code class="docutils literal notranslat
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -416,7 +417,10 @@ it will flatten the top two levels, and <code class="docutils literal notranslat
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">UnBatcher</a></li>
+<li><a class="reference internal" href="#">UnBatcher</a><ul>
+<li><a class="reference internal" href="#torchdata.datapipes.iter.UnBatcher"><code class="docutils literal notranslate"><span class="pre">UnBatcher</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -433,10 +437,8 @@ it will flatten the top two levels, and <code class="docutils literal notranslat
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

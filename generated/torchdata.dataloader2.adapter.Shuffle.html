@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Shuffle &mdash; TorchData main documentation</title>
@@ -341,14 +342,14 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="shuffle">
+  <section id="shuffle">
 <h1>Shuffle<a class="headerlink" href="#shuffle" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.dataloader2.adapter.Shuffle">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">torchdata.dataloader2.adapter.</span></span><span class="sig-name descname"><span class="pre">Shuffle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchdata.dataloader2.adapter.Shuffle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shuffle DataPipes adapter allows control over all existing Shuffler (<code class="docutils literal notranslate"><span class="pre">shuffle</span></code>) DataPipes in the graph.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>enable</strong> – <p>Optional boolean argument to enable/disable shuffling in the <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> graph. True by default.</p>
 <ul class="simple">
 <li><p>True: Enables all previously disabled <code class="docutils literal notranslate"><span class="pre">ShufflerDataPipes</span></code>. If none exists, it will add a new <code class="docutils literal notranslate"><span class="pre">shuffle</span></code> at the end of the graph.</p></li>
@@ -359,14 +360,14 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span> <span class="o">=</span> <span class="n">IterableWrapper</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">))</span><span class="o">.</span><span class="n">shuffle</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span> <span class="o">=</span> <span class="n">IterableWrapper</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">))</span><span class="o">.</span><span class="n">shuffle</span><span class="p">()</span>
 <span class="n">dl</span> <span class="o">=</span> <span class="n">DataLoader2</span><span class="p">(</span><span class="n">dp</span><span class="p">,</span> <span class="p">[</span><span class="n">Shuffle</span><span class="p">(</span><span class="kc">False</span><span class="p">)])</span>
 <span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">))</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">dl</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -411,7 +412,10 @@
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Shuffle</a></li>
+<li><a class="reference internal" href="#">Shuffle</a><ul>
+<li><a class="reference internal" href="#torchdata.dataloader2.adapter.Shuffle"><code class="docutils literal notranslate"><span class="pre">Shuffle</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -428,10 +432,8 @@
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

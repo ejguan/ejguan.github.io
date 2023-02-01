@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Prefetcher &mdash; TorchData main documentation</title>
@@ -341,7 +342,7 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="prefetcher">
+  <section id="prefetcher">
 <h1>Prefetcher<a class="headerlink" href="#prefetcher" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.datapipes.iter.Prefetcher">
@@ -356,7 +357,7 @@ from getting the sample ready ahead of time.</p>
 <p>Beyond the built-in use cases, this can be useful to put after I/O DataPipes that have
 expensive I/O operations (e.g. takes a long time to request a file from a remote server).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>source_datapipe</strong> – IterDataPipe from which samples are prefetched</p></li>
 <li><p><strong>buffer_size</strong> – the size of the buffer which stores the prefetched samples</p></li>
@@ -370,7 +371,7 @@ expensive I/O operations (e.g. takes a long time to request a file from a remote
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -415,7 +416,10 @@ expensive I/O operations (e.g. takes a long time to request a file from a remote
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Prefetcher</a></li>
+<li><a class="reference internal" href="#">Prefetcher</a><ul>
+<li><a class="reference internal" href="#torchdata.datapipes.iter.Prefetcher"><code class="docutils literal notranslate"><span class="pre">Prefetcher</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -432,10 +436,8 @@ expensive I/O operations (e.g. takes a long time to request a file from a remote
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

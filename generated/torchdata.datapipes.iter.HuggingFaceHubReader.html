@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>HuggingFaceHubReader &mdash; TorchData main documentation</title>
@@ -341,7 +342,7 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="huggingfacehubreader">
+  <section id="huggingfacehubreader">
 <h1>HuggingFaceHubReader<a class="headerlink" href="#huggingfacehubreader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.datapipes.iter.HuggingFaceHubReader">
@@ -355,19 +356,19 @@ Contrary to their implementation, default behavior differs in the following (thi
 <li><p><code class="docutils literal notranslate"><span class="pre">streaming</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>source_datapipe</strong> – a DataPipe that contains dataset names which will be accepted by the HuggingFace datasets library</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">huggingface_reader_dp</span> <span class="o">=</span> <span class="n">HuggingFaceHubReader</span><span class="p">(</span><span class="s2">&quot;lhoestq/demo1&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="s2">&quot;main&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">huggingface_reader_dp</span> <span class="o">=</span> <span class="n">HuggingFaceHubReader</span><span class="p">(</span><span class="s2">&quot;lhoestq/demo1&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="s2">&quot;main&quot;</span><span class="p">)</span>
 <span class="n">elem</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">huggingface_reader_dp</span><span class="p">))</span>
 <span class="k">assert</span> <span class="n">elem</span><span class="p">[</span><span class="s2">&quot;package_name&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;com.mantz_it.rfanalyzer&quot;</span>
 </pre></div>
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -412,7 +413,10 @@ Contrary to their implementation, default behavior differs in the following (thi
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">HuggingFaceHubReader</a></li>
+<li><a class="reference internal" href="#">HuggingFaceHubReader</a><ul>
+<li><a class="reference internal" href="#torchdata.datapipes.iter.HuggingFaceHubReader"><code class="docutils literal notranslate"><span class="pre">HuggingFaceHubReader</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -429,10 +433,8 @@ Contrary to their implementation, default behavior differs in the following (thi
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

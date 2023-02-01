@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>CSVParser &mdash; TorchData main documentation</title>
@@ -341,7 +342,7 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="csvparser">
+  <section id="csvparser">
 <h1>CSVParser<a class="headerlink" href="#csvparser" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchdata.datapipes.iter.CSVParser">
@@ -350,7 +351,7 @@
 reads and returns the contents within the CSV files one row at a time (functional name: <code class="docutils literal notranslate"><span class="pre">parse_csv</span></code>).
 Each output is a <cite>List</cite> by default, but it depends on <code class="docutils literal notranslate"><span class="pre">fmtparams</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>source_datapipe</strong> – source DataPipe with tuples of file name and CSV data stream</p></li>
 <li><p><strong>skip_lines</strong> – number of lines to skip at the beginning of each file</p></li>
@@ -379,7 +380,7 @@ than just the contents</p></li>
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
              </article>
@@ -424,7 +425,10 @@ than just the contents</p></li>
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">CSVParser</a></li>
+<li><a class="reference internal" href="#">CSVParser</a><ul>
+<li><a class="reference internal" href="#torchdata.datapipes.iter.CSVParser"><code class="docutils literal notranslate"><span class="pre">CSVParser</span></code></a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -441,10 +445,8 @@ than just the contents</p></li>
      
        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-         <script src="../_static/jquery.js"></script>
-         <script src="../_static/underscore.js"></script>
-         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="../_static/doctools.js"></script>
+         <script src="../_static/sphinx_highlight.js"></script>
      
 
   

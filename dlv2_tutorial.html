@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>DataLoader2 Tutorial &mdash; TorchData main documentation</title>
@@ -339,10 +340,10 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="dataloader2-tutorial">
+  <section id="dataloader2-tutorial">
 <h1>DataLoader2 Tutorial<a class="headerlink" href="#dataloader2-tutorial" title="Permalink to this heading">¶</a></h1>
 <p>This is the tutorial for users to create <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> graph and load data via <code class="docutils literal notranslate"><span class="pre">DataLoader2</span></code> with different backend systems (<code class="docutils literal notranslate"><span class="pre">ReadingService</span></code>). An usage example can found in <a class="reference external" href="https://colab.research.google.com/drive/1eSvp-eUDYPj0Sd0X_Mv9s9VkE8RNDg1u">this colab notebook</a>.</p>
-<div class="section" id="datapipe">
+<section id="datapipe">
 <h2>DataPipe<a class="headerlink" href="#datapipe" title="Permalink to this heading">¶</a></h2>
 <p>Please refer to <a class="reference external" href="dp_tutorial.html">DataPipe Tutorial</a> for more details. Here are the most important caveats necessary:
 to make sure the data pipeline has different order per epoch and data shards are mutually exclusive and collectively exhaustive:</p>
@@ -357,8 +358,8 @@ to make sure the data pipeline has different order per epoch and data shards are
 <span class="n">datapipe</span> <span class="o">=</span> <span class="n">datapiep</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span><span class="o">.</span><span class="n">batch</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="multiprocessing">
+</section>
+<section id="multiprocessing">
 <h2>Multiprocessing<a class="headerlink" href="#multiprocessing" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">PrototypeMultiProcessingReadingService</span></code> handles multiprocessing sharding at the point of <code class="docutils literal notranslate"><span class="pre">sharding_filter</span></code> and synchronize the seeds across worker processes.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rs</span> <span class="o">=</span> <span class="n">PrototypeMultiProcessingReadingService</span><span class="p">(</span><span class="n">num_workers</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
@@ -370,8 +371,8 @@ to make sure the data pipeline has different order per epoch and data shards are
 <span class="n">dl</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="distributed">
+</section>
+<section id="distributed">
 <h2>Distributed<a class="headerlink" href="#distributed" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">DistributedReadingService</span></code> handles distributed sharding at the point of <code class="docutils literal notranslate"><span class="pre">sharding_filter</span></code> and synchronize the seeds across distributed processes. And, in order to balance the data shards across distributed nodes, a <code class="docutils literal notranslate"><span class="pre">fullsync</span></code> <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> will be attached to the <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> graph to align the number of batches across distributed ranks. This would prevent hanging issue caused by uneven shards in distributed training.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rs</span> <span class="o">=</span> <span class="n">DistributedReadingService</span><span class="p">()</span>
@@ -383,8 +384,8 @@ to make sure the data pipeline has different order per epoch and data shards are
 <span class="n">dl</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
              </article>
@@ -451,10 +452,8 @@ to make sure the data pipeline has different order per epoch and data shards are
      
        <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
          <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-         <script src="_static/jquery.js"></script>
-         <script src="_static/underscore.js"></script>
-         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="_static/doctools.js"></script>
+         <script src="_static/sphinx_highlight.js"></script>
      
 
   

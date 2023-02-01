@@ -6,7 +6,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>DataPipe Tutorial &mdash; TorchData main documentation</title>
@@ -339,9 +340,9 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <div class="section" id="datapipe-tutorial">
+  <section id="datapipe-tutorial">
 <h1>DataPipe Tutorial<a class="headerlink" href="#datapipe-tutorial" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="using-datapipes">
+<section id="using-datapipes">
 <h2>Using DataPipes<a class="headerlink" href="#using-datapipes" title="Permalink to this heading">¶</a></h2>
 <p>Suppose that we want to load data from CSV files with the following steps:</p>
 <ul class="simple">
@@ -397,8 +398,8 @@ class constructors. A pipeline can be assembled as the following:</p>
 </div>
 <p>You can find the full list of built-in <a class="reference external" href="torchdata.datapipes.iter.html">IterDataPipes here</a> and
 <a class="reference external" href="torchdata.datapipes.map.html">MapDataPipes here</a>.</p>
-</div>
-<div class="section" id="working-with-dataloader">
+</section>
+<section id="working-with-dataloader">
 <h2>Working with DataLoader<a class="headerlink" href="#working-with-dataloader" title="Permalink to this heading">¶</a></h2>
 <p>In this section, we will demonstrate how you can use <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> with <code class="docutils literal notranslate"><span class="pre">DataLoader</span></code>.
 For the most part, you should be able to use it just by passing <code class="docutils literal notranslate"><span class="pre">dataset=datapipe</span></code> as an input arugment
@@ -456,11 +457,11 @@ batched more than once. You should choose one or the other.</p>
     <span class="n">labels</span><span class="p">,</span> <span class="n">features</span> <span class="o">=</span> <span class="n">first</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">],</span> <span class="n">first</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Labels batch shape: </span><span class="si">{</span><span class="n">labels</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Feature batch shape: </span><span class="si">{</span><span class="n">features</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">labels</span> <span class="si">= }</span><span class="se">\n</span><span class="si">{</span><span class="n">features</span> <span class="si">= }</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">labels</span><span class="w"> </span><span class="si">= }</span><span class="se">\n</span><span class="si">{</span><span class="n">features</span><span class="w"> </span><span class="si">= }</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">n_sample</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="n">dl</span><span class="p">):</span>
         <span class="n">n_sample</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_sample</span> <span class="si">= }</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_sample</span><span class="w"> </span><span class="si">= }</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The following statements will be printed to show the shapes of a single batch of labels and features.</p>
@@ -507,8 +508,8 @@ operations (e.g. decompression) are faster with sequential reading. In those cas
 the files prior to shuffling (potentially prior to any data loading).</p></li>
 </ul>
 <p>You can find more DataPipe implementation examples for various research domains <a class="reference external" href="examples.html">on this page</a>.</p>
-</div>
-<div class="section" id="implementing-a-custom-datapipe">
+</section>
+<section id="implementing-a-custom-datapipe">
 <h2>Implementing a Custom DataPipe<a class="headerlink" href="#implementing-a-custom-datapipe" title="Permalink to this heading">¶</a></h2>
 <p>Currently, we already have a large number of built-in DataPipes and we expect them to cover most necessary
 data processing operations. If none of them supports your need, you can create your own custom DataPipe.</p>
@@ -516,7 +517,7 @@ data processing operations. If none of them supports your need, you can create y
 <code class="docutils literal notranslate"><span class="pre">MapDataPipe</span></code>, take a look at the
 <a class="reference external" href="https://github.com/pytorch/pytorch/tree/master/torch/utils/data/datapipes/map">map</a>
 folder for examples, and follow the steps below for the <code class="docutils literal notranslate"><span class="pre">__getitem__</span></code> method instead of  the <code class="docutils literal notranslate"><span class="pre">__iter__</span></code> method.</p>
-<div class="section" id="naming">
+<section id="naming">
 <h3>Naming<a class="headerlink" href="#naming" title="Permalink to this heading">¶</a></h3>
 <p>The naming convention for <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> is “Operation”-er, followed by <code class="docutils literal notranslate"><span class="pre">IterDataPipe</span></code> or <code class="docutils literal notranslate"><span class="pre">MapDataPipe</span></code>, as each
 DataPipe is essentially a container to apply an operation to data yielded from a source <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code>. For succinctness,
@@ -524,8 +525,8 @@ we alias to just “Operation-er” in <strong>init</strong> files. For our <cod
 <code class="docutils literal notranslate"><span class="pre">MapperIterDataPipe</span></code> and alias it as <code class="docutils literal notranslate"><span class="pre">iter.Mapper</span></code> under <code class="docutils literal notranslate"><span class="pre">torchdata.datapipes</span></code>.</p>
 <p>For the functional method name, the naming convention is <code class="docutils literal notranslate"><span class="pre">datapipe.&lt;operation&gt;</span></code>. For instance,
 the functional method name of <code class="docutils literal notranslate"><span class="pre">Mapper</span></code> is <code class="docutils literal notranslate"><span class="pre">map</span></code>, such that it can be invoked by <code class="docutils literal notranslate"><span class="pre">datapipe.map(...)</span></code>.</p>
-</div>
-<div class="section" id="constructor">
+</section>
+<section id="constructor">
 <h3>Constructor<a class="headerlink" href="#constructor" title="Permalink to this heading">¶</a></h3>
 <p>DataSets are now generally constructed as stacks of <code class="docutils literal notranslate"><span class="pre">DataPipes</span></code>, so each <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> typically takes a
 source <code class="docutils literal notranslate"><span class="pre">DataPipe</span></code> as its first argument. Here is a simplified version of <cite>Mapper</cite> as an example:</p>
@@ -550,8 +551,8 @@ as reference to <code class="docutils literal notranslate"><span class="pre">dee
 the functional name that can be used to invoke <code class="docutils literal notranslate"><span class="pre">FilterIterDataPipe</span></code>. Having a variable named <code class="docutils literal notranslate"><span class="pre">filter</span></code> inside
 another <code class="docutils literal notranslate"><span class="pre">IterDataPipe</span></code> can lead to confusion.</p></li>
 </ul>
-</div>
-<div class="section" id="iterator">
+</section>
+<section id="iterator">
 <h3>Iterator<a class="headerlink" href="#iterator" title="Permalink to this heading">¶</a></h3>
 <p>For <code class="docutils literal notranslate"><span class="pre">IterDataPipes</span></code>, an <code class="docutils literal notranslate"><span class="pre">__iter__</span></code> function is needed to consume data from the source <code class="docutils literal notranslate"><span class="pre">IterDataPipe</span></code> then
 apply the operation over the data before <code class="docutils literal notranslate"><span class="pre">yield</span></code>.</p>
@@ -563,8 +564,8 @@ apply the operation over the data before <code class="docutils literal notransla
             <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">fn</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="length">
+</section>
+<section id="length">
 <h3>Length<a class="headerlink" href="#length" title="Permalink to this heading">¶</a></h3>
 <p>In many cases, as in our <code class="docutils literal notranslate"><span class="pre">MapperIterDataPipe</span></code> example, the <code class="docutils literal notranslate"><span class="pre">__len__</span></code> method of a DataPipe returns the length of the
 source DataPipe.</p>
@@ -580,8 +581,8 @@ in the using DataPipes section below, <code class="docutils literal notranslate"
 is unknown before loading it. In some special cases, <code class="docutils literal notranslate"><span class="pre">__len__</span></code> can be made to either return an integer or raise
 an Error depending on the input. In those cases, the Error must be a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> to support Python’s
 build-in functions like <code class="docutils literal notranslate"><span class="pre">list(dp)</span></code>.</p>
-</div>
-<div class="section" id="registering-datapipes-with-the-functional-api">
+</section>
+<section id="registering-datapipes-with-the-functional-api">
 <h3>Registering DataPipes with the functional API<a class="headerlink" href="#registering-datapipes-with-the-functional-api" title="Permalink to this heading">¶</a></h3>
 <p>Each DataPipe can be registered to support functional invocation using the decorator <code class="docutils literal notranslate"><span class="pre">functional_datapipe</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@functional_datapipe</span><span class="p">(</span><span class="s2">&quot;map&quot;</span><span class="p">)</span>
@@ -603,9 +604,9 @@ build-in functions like <code class="docutils literal notranslate"><span class="
 </div>
 <p>In the above example, <code class="docutils literal notranslate"><span class="pre">datapipes1</span></code> and <code class="docutils literal notranslate"><span class="pre">datapipes2</span></code> represent the exact same stack of <code class="docutils literal notranslate"><span class="pre">IterDataPipe</span></code>s. We
 recommend using the functional form of DataPipes.</p>
-</div>
-</div>
-<div class="section" id="working-with-cloud-storage-providers">
+</section>
+</section>
+<section id="working-with-cloud-storage-providers">
 <h2>Working with Cloud Storage Providers<a class="headerlink" href="#working-with-cloud-storage-providers" title="Permalink to this heading">¶</a></h2>
 <p>In this section, we show examples accessing AWS S3, Google Cloud Storage, and Azure Cloud Storage with built-in <code class="docutils literal notranslate"><span class="pre">fsspec</span></code> DataPipes.
 Although only those two providers are discussed here, with additional libraries, <code class="docutils literal notranslate"><span class="pre">fsspec</span></code> DataPipes
@@ -613,7 +614,7 @@ should allow you to connect with other storage systems as well (<a class="refere
 implementations</a>).</p>
 <p>Let us know on GitHub if you have a request for support for other cloud storage providers,
 or you have code examples to share with the community.</p>
-<div class="section" id="accessing-aws-s3-with-fsspec-datapipes">
+<section id="accessing-aws-s3-with-fsspec-datapipes">
 <h3>Accessing AWS S3 with <code class="docutils literal notranslate"><span class="pre">fsspec</span></code> DataPipes<a class="headerlink" href="#accessing-aws-s3-with-fsspec-datapipes" title="Permalink to this heading">¶</a></h3>
 <p>This requires the installation of the libraries <code class="docutils literal notranslate"><span class="pre">fsspec</span></code>
 (<a class="reference external" href="https://filesystem-spec.readthedocs.io/en/latest/">documentation</a>) and <code class="docutils literal notranslate"><span class="pre">s3fs</span></code>
@@ -646,8 +647,8 @@ without downloading the whole archive into memory first.</p>
 </div>
 <p>Finally, <a class="reference external" href="generated/torchdata.datapipes.iter.FSSpecSaver.html">FSSpecFileSaver</a>
 is also available for writing data to cloud.</p>
-</div>
-<div class="section" id="accessing-google-cloud-storage-gcs-with-fsspec-datapipes">
+</section>
+<section id="accessing-google-cloud-storage-gcs-with-fsspec-datapipes">
 <h3>Accessing Google Cloud Storage (GCS) with <code class="docutils literal notranslate"><span class="pre">fsspec</span></code> DataPipes<a class="headerlink" href="#accessing-google-cloud-storage-gcs-with-fsspec-datapipes" title="Permalink to this heading">¶</a></h3>
 <p>This requires the installation of the libraries <code class="docutils literal notranslate"><span class="pre">fsspec</span></code>
 (<a class="reference external" href="https://filesystem-spec.readthedocs.io/en/latest/">documentation</a>) and <code class="docutils literal notranslate"><span class="pre">gcsfs</span></code>
@@ -678,8 +679,8 @@ directory <code class="docutils literal notranslate"><span class="pre">applicati
 <span class="c1"># gcs:/uspto-pair/applications/05900035.zip/05900035/05900035-transaction_history.tsv, StreamWrapper&lt;...&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="accessing-azure-blob-storage-with-fsspec-datapipes">
+</section>
+<section id="accessing-azure-blob-storage-with-fsspec-datapipes">
 <h3>Accessing Azure Blob storage with <code class="docutils literal notranslate"><span class="pre">fsspec</span></code> DataPipes<a class="headerlink" href="#accessing-azure-blob-storage-with-fsspec-datapipes" title="Permalink to this heading">¶</a></h3>
 <p>This requires the installation of the libraries <code class="docutils literal notranslate"><span class="pre">fsspec</span></code>
 (<a class="reference external" href="https://filesystem-spec.readthedocs.io/en/latest/">documentation</a>) and <code class="docutils literal notranslate"><span class="pre">adlfs</span></code>
@@ -713,9 +714,9 @@ directory <code class="docutils literal notranslate"><span class="pre">curated/c
 </div>
 <p>If necessary, you can also access data in Azure Data Lake Storage Gen1 by using URIs staring with
 <code class="docutils literal notranslate"><span class="pre">adl://</span></code> and <code class="docutils literal notranslate"><span class="pre">abfs://</span></code>, as described in <a class="reference external" href="https://github.com/fsspec/adlfs/blob/main/README.md">README of adlfs repo</a></p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
              </article>
@@ -795,10 +796,8 @@ directory <code class="docutils literal notranslate"><span class="pre">curated/c
      
        <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
          <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-         <script src="_static/jquery.js"></script>
-         <script src="_static/underscore.js"></script>
-         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="_static/doctools.js"></script>
+         <script src="_static/sphinx_highlight.js"></script>
      
 
   
